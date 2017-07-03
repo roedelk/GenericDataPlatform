@@ -1,0 +1,53 @@
+# Appearance
+TITLE : Frontend
+ICON  : resources/img/Icojam-Blue-Bits-Database-settings.ico
+
+# Sizing
+APP_HEIGHT : 600
+APP_WIDTH  : 800
+
+# Menu
+MENUBAR:
+- DEVELOPMENT_MENU:
+    TEXT: "&Development"
+    ITEMS:
+      - ID    : 11
+        TEXT  : Configuration
+        HTML  : resources/html/configuration.html
+        START : true
+      - ID    : 12
+        TEXT  : Templates
+        HTML  : resources/html/templates.html
+      - ID    : 13
+        TEXT  : Generator
+        HTML  : resources/html/generator.html
+      - ID    : 14
+        TEXT  : Testing
+        HTML  : resources/html/testing.html
+- OPERATIONS_MENU:
+    TEXT: "&Operations"
+    ITEMS:
+      - ID    : 21
+        TEXT  : Repository
+        HTML  : resources/html/repository.html
+      - ID    : 22
+        TEXT  : Deployment
+        HTML  : resources/html/deployment.html
+      - ID    : 23
+        TEXT  : Scheduling
+        HTML  : resources/html/scheduling.html
+      - ID    : 24
+        TEXT  : Monitoring
+        HTML  : resources/html/monitoring.html
+- INFO_MENU:
+    TEXT: "&Info"
+    ITEMS:
+      - ID    : 31
+        TEXT  : Settings
+        HTML  : resources/html/settings.html
+      - ID    : 32
+        TEXT  : About
+        HTML  : resources/html/about.html
+      - ID    : 33
+        TEXT  : Quit
+        HTML  : resources/html/quit.html

@@ -1,0 +1,41 @@
+'''
+# http://www.java2s.com/Tutorial/Python/0380__wxPython/extendswxgridPyGridTableBase.htm
+# https://www.bing.com/search?q=add+wx+grid+to+tab&pc=MOZI&form=MOZSBR
+# https://stackoverflow.com/questions/24773725/how-to-make-wxpython-grid-automatic-fit-to-window
+'''
+#<%inherit file="base.html"/>
+
+Templates
+	§ Schedule: Process, ProcessGroup
+	§ Import: Process, ProcessGroup
+	§ Versionize: Process, ProcessGroup
+	§ Validate: todo
+	§ Transform: todo
+	§ Clean: Process, ProcessGroup
+
+
+Approach
+2. GUI fertig (Grid)
+3. Load Meta into GUI
+4. SourceExplorer
+5. Bsp. Job Generierung mit Template
+6. Logging & ErrorHandling
+
+'''
+        devMenu.Append(13, "Generator")
+        devMenu.Append(14, "Testing")
+        opsMenu = wx.Menu()
+        opsMenu.Append(31, "Repository")
+        opsMenu.Append(32, "Deployment")
+        opsMenu.Append(33, "Scheduling")
+        opsMenu.Append(34, "Monitoring")
+        infoMenu = wx.Menu()
+        infoMenu.Append(41, "Settings")
+        infoMenu.Append(42, "About")
+#        menu43 = infoMenu.Append(wx.ID_EXIT, 'Quit', 'Quit application')
+
+
+        menubar.Append(opsMenu,"&Operations")
+        menubar.Append(infoMenu,"&Info")
+'''
+

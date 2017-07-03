@@ -1,0 +1,84 @@
+html,
+body {
+  margin: 10px;
+  padding: 0;
+  height: 100%;
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #eaeaea;
+  color: #424235;
+  text-align:center;
+}
+
+img.icon {
+	width: 24px;	
+}
+img.edit-icon{
+	height: 20px;	
+}
+table.cnfTable{
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+#cnfArea{
+	  width: 95%;
+}
+
+.cnfSection{
+  display: table;	
+  text-align:center;
+  vertical-align: middle;
+  margin-bottom: 20px;
+}
+.cnfSectionHeader {
+	display: table-row;
+	clear: left;
+	background:#009932;
+}
+.cnfSectionName {
+    display: table-cell;
+	float:left;
+    font-size: 20px;
+	font-weight: bold;
+	font-family: inherit;
+	padding: 6px;
+}
+.cnfSectionButtons {
+    display: table-cell;
+	text-align:right;
+	padding: 6px;
+}
+.cnfSectionTable{
+	border-width: 0px 2px 2px 2px;
+	border-style: solid;
+	border-color: #009932;
+	padding: 6px;
+	min-height: 50px;
+	max-height: 500px;
+	overflow:auto;
+	display: none;
+}
+.cnfTableHeader {
+	border: 0px solid #999999;
+	border-bottom: 3px;
+	min-width: 100px;
+	padding: 5px 5px 10px 10px ;		
+}
+.cnfTableCell {
+	border: 0px solid #999999;
+	border-bottom: 1px;
+	min-width: 100px;
+	padding: 5px 5px 1 px 1px ;		
+}
+
+#cnfDialog {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    width:40em;
+    height:30em;
+    margin-top: -15em; /*set to a negative number 1/2 of your height*/
+    margin-left: -20em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+}

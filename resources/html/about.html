@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<link href="cc.css" type="text/css" rel="stylesheet" />
+	<script type="text/javascript" src="../code/behaviour.js"></script>
+	<script type="text/vbscript" src="../code/dataloader.vbs"></script>
+	<script type="text/vbscript">
+		Sub LoadCnfData()
+			Call LoadCnfDataTable("cnfSectionTable_Connection","SELECT * FROM t_connection")
+			Call LoadCnfDataTable("cnfSectionTable_Table","SELECT * FROM t_catalog_table")
+			Call LoadCnfDataTable("cnfSectionTable_Column","SELECT * FROM t_catalog_column")
+			Call LoadCnfDataTable("cnfSectionTable_Process","SELECT * FROM t_process")
+		End Sub
+	</script>
+</head>
+<body onLoad="vbscript:LoadCnfData()">
+<section>
+	<header>
+		<h1>Configuration Console</h1><p/>
+    </header>		
+	<section id="cnfArea">
+		<div class="cnfSection">
+			<div class="cnfSectionHeader">
+				<div class="cnfSectionName">
+					Connections
+				</div>
+				<div class="cnfSectionButtons">
+					<img id="add_Connection" src="style/addition-icon.png" class="icon" />
+					<img id="display_Connection" src="style/zoom-in-icon.png" class="icon"
+					     onClick="javascript:ShowDetails('cnfSectionTable_Connection','display_Connection')" />
+				</div>
+			</div>
+			<div id="cnfSectionTable_Connection" class="cnfSectionTable" />		
+		</div>&nbsp;
+		<div class="cnfSection" >
+			<div class="cnfSectionHeader">
+				<div class="cnfSectionName">
+					Tables
+				</div>
+				<div class="cnfSectionButtons">
+					<img id="add_Table" src="style/addition-icon.png" class="icon" />
+					<img id="display_Table" src="styles/zoom-in-icon.png" class="icon" 
+					     onClick="javascript:ShowDetails('cnfSectionTable_Table','display_Table')" />
+				</div>
+			</div>
+			<div id="cnfSectionTable_Table" class="cnfSectionTable"/>		
+		</div>&nbsp;
+		<div class="cnfSection">
+			<div class="cnfSectionHeader">
+				<div class="cnfSectionName">
+					Table Columns
+				</div>
+				<div class="cnfSectionButtons">
+					<img id="add_Column" src="style/addition-icon.png" class="icon" />
+					<img id="display_Column" src="style/zoom-in-icon.png" class="icon"
+					     onClick="javascript:ShowDetails('cnfSectionTable_Column','display_Column')" />
+				</div>
+			</div>
+			<div id="cnfSectionTable_Column" class="cnfSectionTable" />		
+		</div>&nbsp;
+		<div class="cnfSection">
+			<div class="cnfSectionHeader">
+				<div class="cnfSectionName">
+					Load Processes
+				</div>
+				<div class="cnfSectionButtons">
+					<img id="add_Process" src="style/addition-icon.png" class="icon" />
+					<img id="display_Process" src="style/zoom-in-icon.png" class="icon"
+					     onClick="javascript:ShowDetails('cnfSectionTable_Process','display_Process')" />
+				</div>
+			</div>
+			<div id="cnfSectionTable_Process" class="cnfSectionTable" />		
+		</div>&nbsp;
+    </section>
+	<div id="cnfDialog" style="display: none"/>
+</section>
+</body>
+</html>

@@ -1,0 +1,6 @@
+
+"Connections")
+        nb.AddPage(tab2, "Object")
+        nb.AddPage(tab3, "Attributes")
+        nb.AddPage(tab4, "Processes")
+        nb.AddPage(tab5, "ProcessGroups")

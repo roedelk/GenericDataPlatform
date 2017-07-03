@@ -1,0 +1,65 @@
+
+[2017-06-28 13:42:35] Traceback (most recent call last):
+  File "C:/Users/kolja.roedel/PycharmProjects/GenericDataPlatform/code/modules/GUI.py", line 127, in YesNo
+    dlg = wx.MessageDialog(parent, question, caption, wx.YES_NO | wx.ICON_QUESTION)
+TypeError: MessageDialog(): argument 2 has unexpected type 'CommandEvent'
+
+
+[2017-06-28 13:43:34] Traceback (most recent call last):
+  File "C:/Users/kolja.roedel/PycharmProjects/GenericDataPlatform/code/modules/GUI.py", line 127, in YesNo
+    dlg = wx.MessageDialog(self, question, caption, wx.YES_NO | wx.ICON_QUESTION)
+TypeError: MessageDialog(): argument 2 has unexpected type 'CommandEvent'
+
+
+[2017-06-28 14:06:11] TypeError: YesNo() takes 1 positional argument but 2 were given
+
+
+[2017-06-28 22:12:38] Traceback (most recent call last):
+  File "C:/Users/kolja.roedel/PycharmProjects/GenericDataPlatform/code/modules/GUI.py", line 214, in OnInit
+    self.initialize()
+  File "C:/Users/kolja.roedel/PycharmProjects/GenericDataPlatform/code/modules/GUI.py", line 222, in initialize
+    frame = MainFrame()
+  File "C:/Users/kolja.roedel/PycharmProjects/GenericDataPlatform/code/modules/GUI.py", line 92, in __init__
+    self.embed_browser()
+  File "C:/Users/kolja.roedel/PycharmProjects/GenericDataPlatform/code/modules/GUI.py", line 132, in embed_browser
+    self.browser = cef.CreateBrowserSync(window_info, url="file:gui2.html")
+  File "cefpython_py36.pyx", line 859, in cefpython_py36.CreateBrowserSync (cefpython_py36.cpp:101788)
+  File "utils.pyx", line 100, in cefpython_py36.GetNavigateUrl (cefpython_py36.cpp:7307)
+  File "C:\Users\kolja.roedel\AppData\Local\Programs\Python\Python36-32\lib\nturl2path.py", line 60, in pathname2url
+    raise OSError(error)
+OSError: Bad path: file:gui2.html
+
+
+[2017-06-28 22:23:36] Traceback (most recent call last):
+  File "C:/Users/kolja.roedel/PycharmProjects/GenericDataPlatform/code/modules/GUI.py", line 215, in OnInit
+    self.initialize()
+  File "C:/Users/kolja.roedel/PycharmProjects/GenericDataPlatform/code/modules/GUI.py", line 223, in initialize
+    frame = MainFrame()
+  File "C:/Users/kolja.roedel/PycharmProjects/GenericDataPlatform/code/modules/GUI.py", line 92, in __init__
+    self.embed_browser()
+  File "C:/Users/kolja.roedel/PycharmProjects/GenericDataPlatform/code/modules/GUI.py", line 133, in embed_browser
+    self.browser = cef.CreateBrowserSync(window_info, url="file:gui2.html")
+  File "cefpython_py36.pyx", line 859, in cefpython_py36.CreateBrowserSync (cefpython_py36.cpp:101788)
+  File "utils.pyx", line 100, in cefpython_py36.GetNavigateUrl (cefpython_py36.cpp:7307)
+  File "C:\Users\kolja.roedel\AppData\Local\Programs\Python\Python36-32\lib\nturl2path.py", line 60, in pathname2url
+    raise OSError(error)
+OSError: Bad path: file:gui2.html
+
+
+[2017-06-28 22:23:54] Traceback (most recent call last):
+  File "C:/Users/kolja.roedel/PycharmProjects/GenericDataPlatform/code/modules/GUI.py", line 126, in YesNo
+    print(self.browser.GetURL())
+AttributeError: 'cefpython_py36.PyBrowser' object has no attribute 'GetURL'
+
+
+[2017-06-28 22:29:38] Traceback (most recent call last):
+  File "C:/Users/kolja.roedel/PycharmProjects/GenericDataPlatform/code/modules/GUI.py", line 126, in YesNo
+    print(self.browser.GetFocusedFrame().GetURL())
+AttributeError: 'cefpython_py36.PyFrame' object has no attribute 'GetURL'
+
+
+[2017-06-28 23:14:41] Traceback (most recent call last):
+  File "C:/Users/kolja.roedel/PycharmProjects/GenericDataPlatform/code/modules/GUI.py", line 127, in YesNo
+    self.browser.SetPage("<html><body>a</body></html>")
+AttributeError: 'cefpython_py36.PyBrowser' object has no attribute 'SetPage'
+
